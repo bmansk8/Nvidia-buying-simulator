@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/css/halfmoon-variables.min.css"
+      rel="stylesheet"
+    />
+    <title>Nvidia simulator</title>
+
+    <style>
+      body {
+        font-family: Comic Sans Ms;
+      }
+    </style>
+  </head>
+  <body data-set-preferred-mode-onload="true">
+
+    <!-- data-set-...ect uses the users prefrence when loading the theme so if dark mode is preferred that is used instead of default light-->
+    <div class="page-wrapper">
+      <div class="sticky-alerts"></div>
+
+      <div class="content-wrapper">
+        <h1 class="text-center">Nvidia gpu buying simulator</h1>
+
+        <div class="container-fluid">
+          <div class="row">
+            <div class="w-400 mw-full">
+              <!-- w-400 = width: 40rem (400px), mw-full = max-width: 100% -->
+              <div class="card p-0">
+                <!-- p-0 = padding: 0 -->
+                <img src="https://source.unsplash.com/3GUW88tRmv8/640x426" class="img-fluid rounded-top" alt="..." />
+                <!-- rounded-top = rounded corners on the top -->
+                <!-- Nested content container inside card -->
+                <div class="content">
+                  <h2 class="content-title">RTX 3090</h2>
+                  <p class="text-muted">$1,499.99</p>
+                  <ul>
+                    <li>Cooling System: Fan</li>
+                    <li>Boost Clock Speed: 1.70GHz</li>
+                    <li>GPU Memory Size: 24 GB</li>
+                  </ul>
+                  <div class="text-right">
+                    <!-- text-right = text-align: right -->
+                    <a href="#" class="btn btn-primary" onclick="toastAlert()"
+                      >Buy</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-400 mw-full">
+              <!-- w-400 = width: 40rem (400px), mw-full = max-width: 100% -->
+              <div class="card p-0">
+                <!-- p-0 = padding: 0 -->
+                <img src="https://source.unsplash.com/3GUW88tRmv8/640x426" class="img-fluid rounded-top" alt="..." />
+                <!-- rounded-top = rounded corners on the top -->
+                <!-- Nested content container inside card -->
+                <div class="content">
+                  <h2 class="content-title">RTX 3080</h2>
+                  <p class="text-muted">$699.99</p>
+                  <ul>
+                    <li>Cooling System: Fan</li>
+                    <li>Boost Clock Speed: 1.71GHz</li>
+                    <li>GPU Memory Size: 10 GB</li>
+                  </ul>
+                  <div class="text-right">
+                    <!-- text-right = text-align: right -->
+                    <a href="#" class="btn btn-primary" onclick="toastAlert()"
+                      >Buy</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-400 mw-full">
+              <!-- w-400 = width: 40rem (400px), mw-full = max-width: 100% -->
+              <div class="card p-0">
+                <!-- p-0 = padding: 0 -->
+                <img src="https://source.unsplash.com/3GUW88tRmv8/640x426" class="img-fluid rounded-top" alt="..." />
+                <!-- rounded-top = rounded corners on the top -->
+                <!-- Nested content container inside card -->
+                <div class="content">
+                  <h2 class="content-title">RTX 3070</h2>
+                  <p class="text-muted">$499.99</p>
+                  <ul>
+                    <li>Cooling System: Fan</li>
+                    <li>Boost Clock Speed: 1.73GHz</li>
+                    <li>GPU Memory Size: 8 GB</li>
+                  </ul>
+                  <div class="text-right">
+                    <!-- text-right = text-align: right -->
+                    <a href="#" class="btn btn-primary" onclick="toastAlert()"
+                      >Buy</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="w-400 mw-full">
+              <!-- w-400 = width: 40rem (400px), mw-full = max-width: 100% -->
+              <div class="card p-0">
+                <!-- p-0 = padding: 0 -->
+                <img src="https://source.unsplash.com/3GUW88tRmv8/640x426" class="img-fluid rounded-top" alt="..." />
+                <!-- rounded-top = rounded corners on the top -->
+                <!-- Nested content container inside card -->
+                <div class="content">
+                  <h2 class="content-title">RTX 3060 TI</h2>
+                  <p class="text-muted">$399.99</p>
+                  <ul>
+                    <li>Cooling System: Fan</li>
+                    <li>Boost Clock Speed: 1.67GHz</li>
+                    <li>GPU Memory Size: 8 GB</li>
+                  </ul>
+                  <div class="text-right">
+                    <!-- text-right = text-align: right -->
+                    <a href="#" class="btn btn-primary" onclick="toastAlert()"
+                      >Buy</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <footer class="text-center">built by Barron V Brock using <a href="https://gethalfmoon.com">halfmoon</a> css framework and <a href="https://source.unsplash.com/">unsplash API</a>.</footer>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/halfmoon@1.1.1/js/halfmoon.min.js"></script>
+
+    <script type="text/javascript">
+      function toastAlert() {
+        var alertText = "Sorry we are sold out of this gpu";
+
+        halfmoon.initStickyAlert({
+          content: alertText,
+          title: "Sold Out",
+        });
+      }
+    </script>
+  </body>
+</html>
